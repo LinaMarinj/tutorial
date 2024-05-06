@@ -56,9 +56,9 @@ public class Main {
         } while (opcion != 0); //Mientras la opción sea diferente de 0, itere el ciclo
     }
 
-    private static void calcularValorFinal(String nombreFruta, int valorFruta) { //definimos el metodoto
+    private static void calcularValorFinal(String nombreFruta, int valorFruta) { //definimos el método
         System.out.println("Agregaste 1 libra de " + nombreFruta); //mensaje que indica que fruta agrego
-        valorFinal = valorFinal + valorFruta; //calculo de valor final
+        valorFinal = valorFinal + valorFruta; //cálculo de valor final
         System.out.println("Valor a pagar: " + valorFinal); //mensaje de valor total a pagar 
     }
 
