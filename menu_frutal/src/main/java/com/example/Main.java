@@ -17,7 +17,6 @@ public class Main {
 
         System.out.println("Bienvenido a la tienda frutal");
         System.out.println("Recuerda que las compras son de 1 libra por tipo de fruta");
-
         int opcion;
         do {
             // Mostrar menú de opciones
@@ -32,7 +31,7 @@ public class Main {
             // Leer la opción del usuario
             opcion = scanner.nextInt();
 
-            switch (opcion) {
+            switch (opcion) {  //condicional
                 case 1:
                     calcularValorFinal("fresa", valorFresa);
                     break;
@@ -54,13 +53,13 @@ public class Main {
                 default:
                     System.out.println("Opción inválida. Intente de nuevo.");
             }
-        } while (opcion != 0); //Mientras la opción sea diferente de 0, itera el ciclo
+        } while (opcion != 0); //Mientras la opción sea diferente de 0, itere el ciclo
     }
 
-    private static void calcularValorFinal(String nombreFruta, int valorFruta) {
-        System.out.println("Agregaste 1 libra de " + nombreFruta);
-        valorFinal = valorFinal + valorFruta;
-        System.out.println("Valor a pagar: " + valorFinal);
+    private static void calcularValorFinal(String nombreFruta, int valorFruta) { //definimos el metodoto
+        System.out.println("Agregaste 1 libra de " + nombreFruta); //mensaje que indica que fruta agrego
+        valorFinal = valorFinal + valorFruta; //calculo de valor final
+        System.out.println("Valor a pagar: " + valorFinal); //mensaje de valor total a pagar 
     }
 
 }
